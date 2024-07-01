@@ -1,0 +1,37 @@
+{
+  "build": {
+    "content": [
+      {
+        "files": [
+          "reference/**.md",
+          "reference/**.yml",
+          "toc.yml",
+          "*.md"
+        ]
+      }
+    ],
+    "dest": "_site",
+    "globalMetadata": {
+      "_appName": "Documentation",
+      "_appFooter": "Made with <a href=\"https://go.microsoft.com/fwlink/?linkid=2247728\">ALDoc</a> and <a href=\"https://dotnet.github.io/docfx\">DocFx</a>",
+      "_appLogoPath": "public/aldoc_logo.svg",
+      "_enableSearch": false,
+      "_disableTocFilter": false,
+      "_noindex": false,
+      "_disableNextArticle": true
+    },
+    "fileMetadataFiles": [],
+    "template": [
+      "default",
+      "modern",
+      "./template/ContentTemplate"
+    ],
+    "postProcessors": [],
+    "markdownEngineName": "markdig",
+    "noLangKeyword": false,
+    "keepFileLink": false,
+    "cleanupCacheHistory": false,
+    "disableGitFeatures": true
+  }
+}
+

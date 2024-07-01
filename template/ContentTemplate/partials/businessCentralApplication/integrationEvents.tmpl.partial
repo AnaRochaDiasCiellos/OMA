@@ -1,0 +1,6 @@
+{{#integrationEvents.0}}
+	<h2 id="integration-events">{{__global.integrationEvents}}</h2>
+{{/integrationEvents.0}}
+{{#integrationEvents}}
+	{{>partials/businessCentralApplication/memberDetails}}
+{{/integrationEvents}}

@@ -1,0 +1,6 @@
+{{#events.0}}
+	<h2 id="events">{{__global.events}}</h2>
+{{/events.0}}
+{{#events}}
+	{{>partials/businessCentralApplication/memberDetails}}
+{{/events}}

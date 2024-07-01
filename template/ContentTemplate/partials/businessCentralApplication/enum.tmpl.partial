@@ -1,0 +1,48 @@
+{{>partials/businessCentralApplication/objectHeader}}
+
+{{>partials/businessCentralApplication/implements}}
+{{>partials/businessCentralApplication/remarks}}
+{{>partials/businessCentralApplication/examples}}
+
+{{>partials/businessCentralApplication/objectProperties}}
+
+{{#enumValues.0}}
+	<h2 id="values">{{__global.values}}</h2>
+	<table class="table">
+		<thead>
+			<tr>
+				<th>{{__global.name}}</th>
+				<th>{{__global.description}}</th>
+			</tr>
+		</thead>
+		<tbody>
+{{/enumValues.0}}
+{{#enumValues}}
+				<tr>
+					<td>{{name}}</td>
+					<td>
+						{{#obsoletion}}
+							<p>
+								<span class="font-weight-bold">{{__global.appliesToObsolete}} </span>
+								{{#isPending}}
+									{{__global.elementWillBecomeObsoleteFromVersion}} {{version}}. {{reason}}
+								{{/isPending}}
+								{{^isPending}}
+									{{__global.elementIsObsoleteFromVersion}} {{version}}. {{reason}}
+								{{/isPending}}
+							</p>
+						{{/obsoletion}}
+						{{#summary}}
+							{{{summary}}}
+						{{/summary}}
+					</td>
+				</tr>
+{{/enumValues}}
+{{#enumValues.0}}
+		</tbody>
+	</table>
+{{/enumValues.0}}
+
+{{>partials/businessCentralApplication/methods}}
+
+{{>partials/businessCentralApplication/seeAlso}}

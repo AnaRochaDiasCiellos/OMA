@@ -1,0 +1,27 @@
+{{>partials/businessCentralApplication/objectHeader}}
+
+{{#dotNetPackages.0}}
+	<h2>{{__global.includedDotNetPackages}}</h2>
+	<table class="table">
+		<thead>
+			<tr>
+				<th>{{__global.name}}</th>
+				<th>{{__global.assemblies}}</th>
+			</tr>
+		</thead>
+		<tbody>
+			{{#dotNetPackages}}
+				<tr>
+					<td>{{name}}</td>
+					<td>
+						<ul>
+							{{#assemblies}}
+								<li>{{{ . }}}</li>
+							{{/assemblies}}
+						</ul>
+					</td>
+				</tr>
+			{{/dotNetPackages}}
+		</tbody>
+	</table>
+{{/dotNetPackages.0}}

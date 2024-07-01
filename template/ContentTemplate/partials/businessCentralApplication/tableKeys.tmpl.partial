@@ -1,0 +1,22 @@
+{{#tableKeys.0}}
+	<h2 id="keys">{{__global.tableKeys}}</h2>
+
+	<table class="table">
+		<thead>
+			<tr>
+				<th>{{__global.name}}</th>
+				<th>{{__global.keyFields}}</th>
+			</tr>
+		</thead>
+		<tbody>
+{{/tableKeys.0}}
+{{#tableKeys}}
+				<tr>
+					<td>{{name}}</td>
+					<td class="font-style-italic">{{keyFields}}</td>
+				</tr>
+{{/tableKeys}}
+{{#tableKeys.0}}
+		</tbody>
+	</table>
+{{/tableKeys.0}}

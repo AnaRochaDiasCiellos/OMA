@@ -1,0 +1,99 @@
+/* HEADINGS */
+
+h1 {
+	font-weight: 600;
+	font-size: 32px;
+}
+
+h2 {
+	font-weight: 600;
+	font-size: 24px;
+	line-height: 1.8;
+}
+
+h3 {
+	font-weight: 600;
+	font-size: 20px;
+	line-height: 1.8;
+}
+
+
+h4 {
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 1.8;
+}
+
+h5 {
+	font-size: 14px;
+	padding: 10px 0px;
+}
+
+article p {
+	margin-top: 1rem;
+	margin-bottom: 0;
+	word-wrap: break-word;
+}
+
+article h2,
+article h3,
+article h4 {
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+article h4 {
+	padding-bottom: 8px;
+	border-bottom: 2px solid #ddd;
+}
+.font-weight-bold {
+	font-weight: 700 !important;
+}
+.font-style-italic{
+	font-style: italic !important;
+}
+article .table {
+	font-size: 0.875rem;
+	table-layout: auto;
+	width: 100%;
+}
+article .summaryHolder {
+	margin-top: 24px;
+	display: flex;
+	margin-bottom: 8px;
+}
+
+article .summaryHolder > .summary {
+	flex: 1;
+}
+
+article .summary p:first-of-type {
+	margin-top: 0;
+}
+article .memberNameHolder {
+	word-wrap: break-word;
+	overflow: hidden;
+	white-space: normal;
+	word-break: break-word;
+}
+article .memberInfo {
+	margin-left: 24px;
+}
+article .xref {
+	text-underline-position: auto;
+}
+
+.table td p:first-child {
+	margin-top: 0;
+}
+
+.table th p:first-child {
+	margin-top: 0;
+}
+.navbar-nav {
+	visibility: hidden;
+}
+
+a {
+	color: #008489;
+}

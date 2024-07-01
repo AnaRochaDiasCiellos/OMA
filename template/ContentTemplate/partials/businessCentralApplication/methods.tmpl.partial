@@ -1,0 +1,6 @@
+{{#methods.0}}
+	<h2 id="methods">{{__global.methodsInSubtitle}}</h2>
+{{/methods.0}}
+{{#methods}}
+	{{>partials/businessCentralApplication/memberDetails}}
+{{/methods}}

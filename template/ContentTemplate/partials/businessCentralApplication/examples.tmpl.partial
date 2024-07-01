@@ -1,0 +1,6 @@
+{{#examples.0}}
+	<h2 id="examples">{{__global.examples}}</h2>
+{{/examples.0}}
+{{#examples}}
+	{{{ . }}}
+{{/examples}}

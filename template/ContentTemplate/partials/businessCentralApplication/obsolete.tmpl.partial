@@ -1,0 +1,12 @@
+{{! DO NOT MERGE WITH LEARN TEMPLATES. OSS DocFx differs from learn }}
+{{#obsoletion}}
+	<div class="CAUTION alert alert-danger alert-is-danger">
+		<h5 class="alert-title">{{__global.obsolete}}</h5>
+		{{#isPending}}
+			<p>{{__global.elementWillBecomeObsoleteFromVersion}} {{version}}. {{reason}}</p>
+		{{/isPending}}
+		{{^isPending}}
+			<p>{{__global.elementIsObsoleteFromVersion}} {{version}}. {{reason}}</p>
+		{{/isPending}}
+	</div>
+{{/obsoletion}}

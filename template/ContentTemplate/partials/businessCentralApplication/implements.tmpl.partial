@@ -1,0 +1,10 @@
+{{#implements.0}}
+	<h2 id="implements">{{__global.implements}}</h2>
+	<ul>
+{{/implements.0}}
+{{#implements}}
+			<li>{{>partials/businessCentralApplication/symbolReference}}</li>
+{{/implements}}
+{{#implements.0}}
+	</ul>
+{{/implements.0}}

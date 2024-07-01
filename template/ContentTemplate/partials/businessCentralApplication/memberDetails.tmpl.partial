@@ -1,0 +1,80 @@
+<h3 class="memberNameHolder">{{name}}</h3>
+<div class="memberInfo">
+	{{>partials/businessCentralApplication/obsolete}}
+
+	{{#summary}}
+		<div class="summaryHolder">
+			<div class="summary">
+				{{{summary}}}
+			</div>
+		</div>
+	{{/summary}}
+
+	{{#syntax}}
+		<pre><code dir="ltr" class="hljs lang-al">{{declaration}}</code></pre>
+
+		{{#parameters.0}}
+			<h4>{{__global.parameters}}</h4>
+			<table class="table">
+				<thead>
+					<tr>
+						<th>{{__global.name}}</th>
+						<th>{{__global.typeHeader}}</th>
+						<th>{{__global.description}}</th>
+					</tr>
+				</thead>
+				<tbody>
+					{{#parameters}}
+						<tr>
+							<td>
+								{{{id}}}
+							</td>
+							<td class="font-style-italic">
+                {{#parameterType}}
+                {{>partials/businessCentralApplication/symbolReference}}
+                {{/parameterType}}
+              </td>
+							<td>
+								{{{description}}}
+							</td>
+						</tr>
+					{{/parameters}}
+				</tbody>
+			</table>
+		{{/parameters.0}}
+
+		{{#return}}
+			<h4>{{__global.returns}}</h4>
+			<table class="table">
+				<thead>
+					<tr>
+						<th>{{__global.typeHeader}}</th>
+						<th>{{__global.description}}</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>
+              {{#returnType}}
+              {{>partials/businessCentralApplication/symbolReference}}
+              {{/returnType}}
+            </td>
+						<td>
+							{{{description}}}
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		{{/return}}
+	{{/syntax}}
+
+	{{#examples.0}}
+		<h4>{{__global.examples}}</h4>
+		{{{ . }}}
+	{{/examples.0}}
+
+	{{#remarks}}
+		<h4>{{__global.remarks}}</h4>
+		{{{.}}}
+	{{/remarks}}
+</div>

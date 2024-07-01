@@ -1,0 +1,570 @@
+{
+	"title": "BusinessCentralApplicationObject",
+	"$schema": "https://dotnet.github.io/docfx/schemas/v1.0/schema.json#",
+	"version": "1.0.0",
+	"description": "The schema for Business Central object page",
+	"id": "https://static.docs.com/ui/latest/schemas/BusinessCentralApplicationObject.schema.json",
+	"type": "object",
+	"additionalProperties": false,
+	"required": [ "baseKind", "kind", "name", "uid", "fqName" ],
+	"renderType": "content",
+	"archivable": false,
+	"properties": {
+		"alId": {
+			"type": "string"
+		},
+		"baseKind": {
+			"enum": [
+				".NET Package",
+				"Codeunit",
+				"CodeUnit",
+				"ControlAddIn",
+				"Enum",
+				"Interface",
+				"Module",
+				"Page",
+				"PermissionSet",
+				"Profile",
+				"Report",
+				"Table",
+				"Query",
+				"XmlPort"
+			],
+			"type": "string"
+		},
+		"commentId": {
+			"type": "string"
+		},
+		"dotNetPackages": {
+			"items": {
+				"additionalProperties": false,
+				"properties": {
+					"assemblies": {
+						"items": {
+							"type": "string"
+						},
+						"minItems": 1,
+						"type": "array"
+					},
+					"name": {
+						"type": "string"
+					}
+				},
+				"required": [ "assemblies", "name" ],
+				"type": "object"
+			},
+			"minItems": 1,
+			"type": "array"
+		},
+		"enumValues": {
+			"items": {
+				"additionalProperties": false,
+				"properties": {
+					"commentId": {
+						"type": "string"
+					},
+					"examples": {
+						"items": {
+							"contentType": "markdown",
+							"type": "string"
+						},
+						"minItems": 1,
+						"type": "array"
+					},
+					"name": {
+						"type": "string"
+					},
+					"obsoletion": {
+						"$ref": "#/definitions/obsoletion"
+					},
+					"remarks": {
+						"contentType": "markdown",
+						"tags": [ "localizable" ],
+						"type": "string"
+					},
+					"summary": {
+						"contentType": "markdown",
+						"tags": [ "localizable" ],
+						"type": "string"
+					},
+					"uid": {
+						"contentType": "uid",
+						"type": "string"
+					}
+				},
+				"required": [ "name", "uid" ],
+				"type": "object",
+				"xrefProperties": [ "name" ]
+			},
+			"minItems": 1,
+			"type": "array"
+		},
+		"events": {
+			"items": {
+				"additionalProperties": false,
+				"properties": {
+					"commentId": {
+						"type": "string"
+					},
+					"examples": {
+						"items": {
+							"contentType": "markdown",
+							"type": "string"
+						},
+						"minItems": 1,
+						"type": "array"
+					},
+					"name": {
+						"type": "string"
+					},
+					"obsoletion": {
+						"$ref": "#/definitions/obsoletion"
+					},
+					"remarks": {
+						"contentType": "markdown",
+						"tags": [ "localizable" ],
+						"type": "string"
+					},
+					"summary": {
+						"contentType": "markdown",
+						"tags": [ "localizable" ],
+						"type": "string"
+					},
+					"syntax": {
+						"$ref": "#/definitions/syntax"
+					},
+					"uid": {
+						"contentType": "uid",
+						"type": "string"
+					}
+				},
+				"required": [ "name", "syntax", "uid" ],
+				"type": "object",
+				"xrefProperties": [ "name" ]
+			},
+			"minItems": 1,
+			"type": "array"
+		},
+		"examples": {
+			"items": {
+				"contentType": "markdown",
+				"type": "string"
+			},
+			"minItems": 1,
+			"type": "array"
+		},
+		"extends": {
+			"$ref": "#/definitions/symbolReference"
+		},
+		"fields": {
+			"items": {
+				"additionalProperties": false,
+				"properties": {
+					"uid": {
+						"contentType": "uid",
+						"type": "string"
+					},
+					"fieldType": {
+						"type": "string"
+					},
+					"name": {
+						"type": "string"
+					},
+					"description": {
+						"contentType": "markdown",
+						"tags": [ "localizable" ],
+						"type": "string"
+					},
+					"obsoletion": {
+						"$ref": "#/definitions/obsoletion"
+					},
+					"type": {
+						"$ref": "#/definitions/symbolReference"
+					}
+				},
+				"required": [ "uid", "type", "name" ],
+				"xrefProperties": [ "name" ],
+				"type": "object"
+			},
+			"minItems": 1,
+			"type": "array"
+		},
+		"fqName": {
+			"type": "string"
+		},
+		"implements": {
+			"items": {
+				"$ref": "#/definitions/symbolReference"
+			},
+			"minItems": 1,
+			"type": "array"
+		},
+		"interfaces": {
+			"items": {
+				"contentType": "xref",
+				"type": "string"
+			},
+			"minItems": 1,
+			"type": "array"
+		},
+		"integrationEvents": {
+			"items": {
+				"additionalProperties": false,
+				"properties": {
+					"commentId": {
+						"type": "string"
+					},
+					"examples": {
+						"items": {
+							"contentType": "markdown",
+							"type": "string"
+						},
+						"minItems": 1,
+						"type": "array"
+					},
+					"name": {
+						"type": "string"
+					},
+					"obsoletion": {
+						"$ref": "#/definitions/obsoletion"
+					},
+					"remarks": {
+						"contentType": "markdown",
+						"tags": [ "localizable" ],
+						"type": "string"
+					},
+					"summary": {
+						"contentType": "markdown",
+						"tags": [ "localizable" ],
+						"type": "string"
+					},
+					"syntax": {
+						"$ref": "#/definitions/syntax"
+					},
+					"uid": {
+						"contentType": "uid",
+						"type": "string"
+					}
+				},
+				"required": [ "name", "syntax", "uid" ],
+				"type": "object",
+				"xrefProperties": [ "name" ]
+			},
+			"minItems": 1,
+			"type": "array"
+		},
+		"kind": {
+			"enum": [
+				".NET Package",
+				"Codeunit",
+				"CodeUnit",
+				"ControlAddIn",
+				"Module",
+				"Enum",
+				"Enum Extension",
+				"EnumExtension",
+				"Interface",
+				"Page",
+				"Page Customization",
+				"PageCustomization",
+				"Page Extension",
+				"PageExtension",
+				"PermissionSet",
+				"PermissionSet Extension",
+				"PermissionSetExtension",
+				"Profile",
+				"Profile Extension",
+				"ProfileExtension",
+				"Query",
+				"Report",
+				"Report Extension",
+				"ReportExtension",
+				"Table",
+				"Table Extension",
+				"TableExtension",
+				"XmlPort"
+			],
+			"type": "string"
+		},
+		"langs": {
+			"type": "array",
+			"minItems": 1,
+			"items": {
+				"type": "string"
+			}
+		},
+		"methods": {
+			"items": {
+				"additionalProperties": false,
+				"properties": {
+					"commentId": {
+						"type": "string"
+					},
+					"examples": {
+						"items": {
+							"contentType": "markdown",
+							"type": "string"
+						},
+						"minItems": 1,
+						"type": "array"
+					},
+					"name": {
+						"type": "string"
+					},
+					"obsoletion": {
+						"$ref": "#/definitions/obsoletion"
+					},
+					"remarks": {
+						"contentType": "markdown",
+						"tags": [ "localizable" ],
+						"type": "string"
+					},
+					"summary": {
+						"contentType": "markdown",
+						"tags": [ "localizable" ],
+						"type": "string"
+					},
+					"syntax": {
+						"$ref": "#/definitions/syntax"
+					},
+					"uid": {
+						"contentType": "uid",
+						"type": "string"
+					}
+				},
+				"required": [ "name", "syntax", "uid" ],
+				"type": "object",
+				"xrefProperties": [ "name" ]
+			},
+			"minItems": 1,
+			"type": "array"
+		},
+		"name": {
+			"type": "string"
+		},
+		"namespace": {
+			"type": "string"
+		},
+		"objectProperties": {
+			"items": {
+				"additionalProperties": false,
+				"properties": {
+					"name": {
+						"type": "string"
+					},
+					"promoted": {
+						"type": "boolean"
+					},
+					"value": {
+						"type": "string"
+					},
+					"xrefType": {
+						"$ref": "#/definitions/symbolReference"
+					}
+				},
+				"required": [ "name", "value" ],
+				"type": "object"
+			},
+			"minItems": 1,
+			"type": "array"
+		},
+		"obsoletion": {
+			"$ref": "#/definitions/obsoletion"
+		},
+		"parent": {
+			"type": "string"
+		},
+		"queryColumns": {
+			"items": {
+				"additionalProperties": false,
+				"properties": {
+					"columnType": {
+						"$ref": "#/definitions/symbolReference"
+					},
+					"dataItem": {
+						"type": "string"
+					},
+					"dataType": {
+						"type": "string"
+					},
+					"name": {
+						"type": "string"
+					},
+					"obsoletion": {
+						"$ref": "#/definitions/obsoletion"
+					},
+					"summary": {
+						"contentType": "markdown",
+						"tags": [ "localizable" ],
+						"type": "string"
+					},
+					"uid": {
+						"contentType": "uid",
+						"type": "string"
+					}
+				},
+				"required": [ "dataItem", "name" ],
+				"xrefProperties": [ "name" ],
+				"type": "object"
+			},
+			"minItems": 1,
+			"type": "array"
+		},
+		"remarks": {
+			"contentType": "markdown",
+			"tags": [ "localizable" ],
+			"type": "string"
+		},
+		"seeAlso": {
+			"items": {
+				"contentType": "markdown",
+				"type": "string"
+			},
+			"minItems": 1,
+			"type": "array"
+		},
+		"sourceTableType": {
+			"$ref": "#/definitions/symbolReference"
+		},
+		"summary": {
+			"contentType": "markdown",
+			"tags": [ "localizable" ],
+			"type": "string"
+		},
+		"tableKeys": {
+			"items": {
+				"additionalProperties": false,
+				"properties": {
+					"keyFields": {
+						"type": "string"
+					},
+					"name": {
+						"type": "string"
+					}
+				},
+				"required": [ "keyFields", "name" ],
+				"type": "object"
+			},
+			"minItems": 1,
+			"type": "array"
+		},
+		"triggers": {
+			"items": {
+				"additionalProperties": false,
+				"properties": {
+					"description": {
+						"contentType": "markdown",
+						"tags": [ "localizable" ],
+						"type": "string"
+					},
+					"name": {
+						"type": "string"
+					}
+				},
+				"required": [ "name" ],
+				"type": "object"
+			},
+			"minItems": 1,
+			"type": "array"
+		},
+		"uid": {
+			"contentType": "uid",
+			"type": "string"
+		}
+	},
+	"definitions": {
+		"obsoletion": {
+			"additionalProperties": false,
+			"properties": {
+				"reason": {
+					"type": "string"
+				},
+				"state": {
+					"type": "string",
+					"enum": [ "pending", "removed" ]
+				},
+				"version": {
+					"type": "string"
+				}
+			},
+			"required": [ "state", "version" ],
+			"type": "object"
+		},
+		"parameter": {
+			"additionalProperties": false,
+			"properties": {
+				"description": {
+					"contentType": "markdown",
+					"tags": [ "localizable" ],
+					"type": "string"
+				},
+				"id": {
+					"type": "string"
+				},
+				"parameterType": {
+					"$ref": "#/definitions/symbolReference"
+				}
+			},
+			"required": [ "id", "parameterType" ],
+			"type": "object"
+		},
+		"syntax": {
+			"additionalProperties": false,
+			"properties": {
+				"content": {
+					"type": "string"
+				},
+				"parameters": {
+					"type": "array",
+					"minItems": 1,
+					"items": {
+						"$ref": "#/definitions/parameter"
+					}
+				},
+				"return": {
+					"additionalProperties": false,
+					"properties": {
+						"description": {
+							"contentType": "markdown",
+							"tags": [ "localizable" ],
+							"type": "string"
+						},
+						"returnType": {
+							"$ref": "#/definitions/symbolReference"
+						}
+					},
+					"required": [ "returnType" ],
+					"type": "object"
+				},
+				"signatures": {
+					"type": "array",
+					"minItems": 1,
+					"items": {
+						"type": "string"
+					}
+				}
+			},
+			"required": [ "content" ],
+			"type": "object"
+		},
+		"symbolReference": {
+			"additionalProperties": false,
+			"properties": {
+				"internalReference": {
+					"contentType": "xref",
+					"type": "string"
+				},
+				"isExternal": {
+					"type": "boolean"
+				},
+				"name": {
+					"type": "string"
+				}
+			},
+			"required": [ "isExternal" ],
+			"type": "object"
+		}
+	},
+	"metadata": "/metadata",
+	"xrefProperties": [ "name", "summary", "fqName" ]
+}

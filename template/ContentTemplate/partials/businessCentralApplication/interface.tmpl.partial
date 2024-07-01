@@ -1,0 +1,8 @@
+{{>partials/businessCentralApplication/objectHeader}}
+
+{{>partials/businessCentralApplication/remarks}}
+{{>partials/businessCentralApplication/examples}}
+
+{{>partials/businessCentralApplication/methods}}
+
+{{>partials/businessCentralApplication/seeAlso}}

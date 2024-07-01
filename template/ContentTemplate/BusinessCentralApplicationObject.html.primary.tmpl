@@ -1,0 +1,41 @@
+{{!master(layout/_master.tmpl)}}
+
+{{#isEnum}}
+  {{>partials/businessCentralApplication/enum}}
+{{/isEnum}}
+{{#isTable}}
+  {{>partials/businessCentralApplication/table}}
+{{/isTable}}
+{{#isCodeunit}}
+  {{>partials/businessCentralApplication/codeUnit}}
+{{/isCodeunit}}
+{{#isModule}}
+  {{>partials/businessCentralApplication/module}}
+{{/isModule}}
+{{#isInterface}}
+  {{>partials/businessCentralApplication/interface}}
+{{/isInterface}}
+{{#isPage}}
+  {{>partials/businessCentralApplication/page}}
+{{/isPage}}
+{{#isPermissionSet}}
+  {{>partials/businessCentralApplication/permissionSet}}
+{{/isPermissionSet}}
+{{#isReport}}
+  {{>partials/businessCentralApplication/report}}
+{{/isReport}}
+{{#isXmlPort}}
+  {{>partials/businessCentralApplication/xmlPort}}
+{{/isXmlPort}}
+{{#isQuery}}
+  {{>partials/businessCentralApplication/query}}
+{{/isQuery}}
+{{#isProfile}}
+  {{>partials/businessCentralApplication/profile}}
+{{/isProfile}}
+{{#isControlAddIn}}
+  {{>partials/businessCentralApplication/controlAddIn}}
+{{/isControlAddIn}}
+{{#isDotNetPackage}}
+  {{>partials/businessCentralApplication/dotNetPackage}}
+{{/isDotNetPackage}}

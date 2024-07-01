@@ -1,0 +1,29 @@
+{{#queryColumns.0}}
+	<h2 id="columns">{{__global.queryColumns}}</h2>
+	<table class="table">
+		<thead>
+			<tr>
+				<th>{{__global.columnName}}</th>
+				<th>{{__global.dataItem}}</th>
+				<th>{{__global.dataType}}</th>
+				<th>{{__global.description}}</th>
+			</tr>
+		</thead>
+		<tbody>
+{{/queryColumns.0}}
+{{#queryColumns}}
+				<tr>
+					<td>{{name}}</td>
+					<td>{{dataItem}}</td>
+					<td class="font-style-italic">
+						{{#columnType}}
+							{{>partials/businessCentralApplication/symbolReference}}
+						{{/columnType}}
+					</td>
+					<td>{{{summary}}}</td>
+				</tr>
+{{/queryColumns}}
+{{#queryColumns.0}}
+		</tbody>
+	</table>
+{{/queryColumns.0}}

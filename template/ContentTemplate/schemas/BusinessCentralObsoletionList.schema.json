@@ -1,0 +1,86 @@
+{
+	"title": "BusinessCentralObsoletionList",
+	"$schema": "https://dotnet.github.io/docfx/schemas/v1.0/schema.json#",
+	"version": "1.0.0",
+	"description": "The schema for Business Central obsoletion lists",
+	"id": "https://static.docs.com/ui/latest/schemas/BusinessCentralObsoletionList.schema.json",
+	"type": "object",
+	"additionalProperties": false,
+	"required": [
+		"uid",
+		"tag"
+	],
+	"renderType": "content",
+	"archivable": false,
+	"properties": {
+		"uid": {
+			"contentType": "uid",
+			"type": "string"
+		},
+		"tag": {
+			"type": "string"
+		},
+		"summary": {
+			"contentType": "markdown",
+			"tags": [
+				"localizable"
+			],
+			"type": "string"
+		},
+		"groups": {
+			"type": "array",
+			"minItems": 1,
+			"items": {
+				"additionalProperties": false,
+				"properties": {
+					"uid": {
+						"contentType": "uid",
+						"type": "string"
+					},
+					"groupName": {
+						"type": "string"
+					},
+					"summary": {
+						"contentType": "markdown",
+						"tags": [ "localizable" ],
+						"type": "string"
+					},
+					"symbols": {
+						"type": "array",
+						"minItems": 1,
+						"items": {
+							"additionalProperties": false,
+							"properties": {
+								"internalReference": {
+									"contentType": "xref",
+									"type": "string"
+								},
+								"kind": {
+									"type": "string"
+								},
+								"name": {
+									"type": "string"
+								},
+								"internalReference": {
+									"contentType": "xref",
+									"type": "string"
+								},
+								"reason": {
+									"type": "string"
+								}
+							},
+							"required": ["kind", "name", "internalReference"],
+							"type": "object"
+						}
+					}
+				},
+				"required": [ "uid", "groupName" ],
+				"type": "object"
+			}
+		}
+	},
+	"metadata": "/metadata",
+	"xrefProperties": [
+		"tag"
+	]
+}

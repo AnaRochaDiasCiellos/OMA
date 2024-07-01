@@ -1,0 +1,19 @@
+<h1>{{kind}} {{name}}</h1>
+
+{{>partials/reference-metadata}}
+{{>partials/docOutline}}
+
+{{#alId}}<div class="font-style-italic">{{{alId}}}</div>{{/alId}}
+{{#namespace}}<div class="font-style-italic">{{__global.namespace}}: {{{namespace}}}</div>{{/namespace}}
+{{#extends}}<div class="font-style-italic">{{__global.extendsInSubtitle}}: {{>partials/businessCentralApplication/symbolReference}}</div>{{/extends}}
+{{#sourceTableType}}<div class="font-style-italic">{{__global.sourceTable}}: {{>partials/businessCentralApplication/symbolReference}}</div>{{/sourceTableType}}
+
+{{>partials/businessCentralApplication/obsolete}}
+
+{{#summary}}
+	<div class="summaryHolder">
+		<div class="summary">
+			{{{summary}}}
+		</div>
+	</div>
+{{/summary}}

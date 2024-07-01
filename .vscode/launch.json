@@ -1,0 +1,21 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Sandbox_Ana",
+            "environmentType": "Sandbox",
+            "tenant": "3f578c68-8dec-4c3d-b901-2d00d0f5e725",
+            "environmentName": "Sandbox_Ana",
+            "type": "al",
+            "request": "launch",
+            "breakOnError": true,
+            "breakOnRecordWrite": false,
+            "launchBrowser": true,
+            "enableSqlInformationDebugger": true,
+            "enableLongRunningSqlStatements": true,
+            "longRunningSqlStatementsThreshold": 500,
+            "numberOfSqlStatements": 10,
+            "schemaUpdateMode": "Synchronize"
+        }
+    ]
+}

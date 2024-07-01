@@ -1,0 +1,35 @@
+{{#objectProperties.0}}
+	<h2 id="properties">{{__global.propertiesInSubtitle}}</h2>
+
+	<table class="table">
+		<thead>
+			<tr>
+				<th>{{__global.name}}</th>
+				<th>{{__global.value}}</th>
+			</tr>
+		</thead>
+		<tbody>
+{{/objectProperties.0}}
+{{#objectProperties}}
+			<tr>
+				{{#promoted}}
+					<td class="font-weight-bold">{{name}}</td>
+					<td class="font-style-italic font-weight-bold">
+				{{/promoted}}
+				{{^promoted}}
+					<td>{{name}}</td>
+					<td class="font-style-italic">
+				{{/promoted}}
+						{{#xrefType}}
+							{{>partials/businessCentralApplication/symbolReference}}
+						{{/xrefType}}
+						{{^xrefType}}
+							{{{value}}}
+						{{/xrefType}}
+					</td>
+			</tr>
+{{/objectProperties}}
+{{#objectProperties.0}}
+		</tbody>
+	</table>
+{{/objectProperties.0}}

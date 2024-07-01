@@ -1,0 +1,38 @@
+<h1>Obsoletions for {{tag}}</h1>
+
+{{>partials/reference-metadata}}
+{{>partials/docOutline}}
+
+{{#groups}}
+	<h2 id="{{groupName}}">{{groupName}}</h2>
+	{{#symbols.0}}
+		{{#summary}}
+		<div class="summaryHolder">
+			<div class="summary">
+				{{{summary}}}
+			</div>
+		</div>
+		{{/summary}}
+		<table class="table">
+			<thead>
+				<tr>
+					<th>{{__global.type}}</th>
+					<th>{{__global.name}}</th>
+					<th>{{__global.description}}</th>
+				</tr>
+			</thead>
+			<tbody>
+	{{/symbols.0}}
+	{{#symbols}}
+					<tr>
+						<td>{{kind}}</td>
+						<td class="font-style-italic"><xref uid="{{ internalReference }}" template="partials/businessCentralApplication/xref-name.tmpl" /></td>
+						<td>{{reason}}</td>
+					</tr>
+	{{/symbols}}
+	{{#symbols.0}}
+			</tbody>
+		</table>
+	{{/symbols.0}}
+{{/groups}}
+

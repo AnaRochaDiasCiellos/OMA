@@ -1,0 +1,8 @@
+{{#seeAlso.0}}
+	<h2 id="see-also">{{__global.seeAlso}}</h2>
+	<ul>
+		{{#seeAlso}}
+			<li>{{{ . }}}</li>
+		{{/seeAlso}}
+	</ul>
+{{/seeAlso.0}}

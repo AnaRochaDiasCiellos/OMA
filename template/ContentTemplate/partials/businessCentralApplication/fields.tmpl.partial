@@ -1,0 +1,28 @@
+{{#fields.0}}
+	<h2 id="fields">{{__global.fieldsInSubtitle}}</h2>
+	<table class="table">
+		<thead>
+			<tr>
+				<th>{{__global.name}}</th>
+				<th>{{__global.typeHeader}}</th>
+				<th>{{__global.description}}</th>
+			</tr>
+		</thead>
+		<tbody>
+{{/fields.0}}
+{{#fields}}
+				<tr>
+					<td>{{name}}</td>
+					<td class="font-style-italic">
+						{{#type}}
+							{{>partials/businessCentralApplication/symbolReference}}
+						{{/type}}
+						{{^type}}{{{fieldType}}}{{/type}}
+					</td>
+					<td>{{{description}}}</td>
+				</tr>
+{{/fields}}
+{{#fields.0}}
+		</tbody>
+	</table>
+{{/fields.0}}

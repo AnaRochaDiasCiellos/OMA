@@ -1,0 +1,21 @@
+{{#triggers.0}}
+	<h2 id="triggers">{{__global.triggers}}</h2>
+	<table class="table">
+		<thead>
+			<tr>
+				<th>{{__global.name}}</th>
+				<th>{{__global.description}}</th>
+			</tr>
+		</thead>
+		<tbody>
+{{/triggers.0}}
+{{#triggers}}
+				<tr>
+					<td>{{name}}</td>
+					<td>{{description}}</td>
+				</tr>
+{{/triggers}}
+{{#triggers.0}}
+		</tbody>
+	</table>
+{{/triggers.0}}
