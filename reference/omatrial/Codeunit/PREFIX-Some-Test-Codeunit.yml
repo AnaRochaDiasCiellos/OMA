@@ -1,0 +1,17 @@
+﻿### YamlMime:BusinessCentralApplicationObject
+fqName: '"PREFIX Some Test Codeunit"'
+alId: ID 50101
+baseKind: Codeunit
+kind: Codeunit
+parent: 'N:Module::OMATrial::Namespace::'
+langs:
+- al
+seeAlso:
+- '[Codeunit](https://learn.microsoft.com/dynamics365/business-central/dev-itpro/developer/devenv-codeunit-object)'
+objectProperties:
+- name: Subtype
+  value: Test
+  promoted: false
+commentId: O:Codeunit::PREFIX Some Test Codeunit
+name: '"PREFIX Some Test Codeunit"'
+uid: O:Codeunit::PREFIX_Some_Test_Codeunit

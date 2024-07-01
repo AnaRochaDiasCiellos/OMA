@@ -1,0 +1,21 @@
+﻿### YamlMime:BusinessCentralApplicationObject
+fqName: '"TM3 FixedAssetType"'
+alId: ID 50300
+baseKind: Enum
+kind: EnumExtension
+parent: 'N:Module::OMATrial::Namespace::'
+langs:
+- al
+extends:
+  name: Microsoft.Pricing.Asset."Price Asset Type"
+  isExternal: true
+seeAlso:
+- '[Enum Extension](https://learn.microsoft.com/dynamics365/business-central/dev-itpro/developer/devenv-extensible-enums)'
+enumValues:
+- summary: another summary about an enum extension
+  name: '"TM3 FixedAsset"'
+  uid: E:EnumExtension::TM3_FixedAssetType.TM3_FixedAsset
+commentId: O:EnumExtension::TM3 FixedAssetType
+summary: EnumExtension TM3 FixedAssetType (ID 50300) extends Record Price Asset Type.
+name: '"TM3 FixedAssetType"'
+uid: O:EnumExtension::TM3_FixedAssetType

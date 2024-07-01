@@ -1,0 +1,14 @@
+﻿### YamlMime:BusinessCentralApplicationObject
+fqName: '"TM3 FixedAssetPriceCalc."'
+alId: ID 50305
+baseKind: Codeunit
+kind: Codeunit
+parent: 'N:Module::OMATrial::Namespace::'
+langs:
+- al
+seeAlso:
+- '[Codeunit](https://learn.microsoft.com/dynamics365/business-central/dev-itpro/developer/devenv-codeunit-object)'
+commentId: O:Codeunit::TM3 FixedAssetPriceCalc#
+summary: oh look a summary about codeunit 50305
+name: '"TM3 FixedAssetPriceCalc."'
+uid: O:Codeunit::TM3_FixedAssetPriceCalc#

@@ -1,0 +1,13 @@
+﻿### YamlMime:BusinessCentralApplicationObject
+fqName: '"PREFIX Event Subscribers"'
+alId: ID 50102
+baseKind: Codeunit
+kind: Codeunit
+parent: 'N:Module::OMATrial::Namespace::'
+langs:
+- al
+seeAlso:
+- '[Codeunit](https://learn.microsoft.com/dynamics365/business-central/dev-itpro/developer/devenv-codeunit-object)'
+commentId: O:Codeunit::PREFIX Event Subscribers
+name: '"PREFIX Event Subscribers"'
+uid: O:Codeunit::PREFIX_Event_Subscribers

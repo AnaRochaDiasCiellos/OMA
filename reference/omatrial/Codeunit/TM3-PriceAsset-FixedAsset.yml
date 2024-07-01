@@ -1,0 +1,157 @@
+﻿### YamlMime:BusinessCentralApplicationObject
+fqName: '"TM3 PriceAsset-FixedAsset"'
+alId: ID 50304
+baseKind: Codeunit
+kind: Codeunit
+parent: 'N:Module::OMATrial::Namespace::'
+langs:
+- al
+seeAlso:
+- '[Codeunit](https://learn.microsoft.com/dynamics365/business-central/dev-itpro/developer/devenv-codeunit-object)'
+methods:
+- syntax:
+    content: 'procedure GetNo(var PriceAsset: Record "Price Asset" temporary)'
+    parameters:
+    - id: PriceAsset
+      parameterType:
+        name: Record "Price Asset" temporary
+        isExternal: true
+  name: GetNo
+  uid: M:Codeunit::TM3_PriceAsset-FixedAsset.GetNo(Price_Asset@)
+- syntax:
+    content: 'procedure GetId(var PriceAsset: Record "Price Asset" temporary)'
+    parameters:
+    - id: PriceAsset
+      parameterType:
+        name: Record "Price Asset" temporary
+        isExternal: true
+  name: GetId
+  uid: M:Codeunit::TM3_PriceAsset-FixedAsset.GetId(Price_Asset@)
+- syntax:
+    content: 'procedure IsLookupOK(var PriceAsset: Record "Price Asset" temporary): Boolean'
+    parameters:
+    - id: PriceAsset
+      parameterType:
+        name: Record "Price Asset" temporary
+        isExternal: true
+    return:
+      returnType:
+        name: Boolean
+        isExternal: true
+  name: IsLookupOK
+  uid: M:Codeunit::TM3_PriceAsset-FixedAsset.IsLookupOK(Price_Asset@):Boolean
+- syntax:
+    content: 'procedure ValidateUnitOfMeasure(var PriceAsset: Record "Price Asset" temporary): Boolean'
+    parameters:
+    - id: PriceAsset
+      parameterType:
+        name: Record "Price Asset" temporary
+        isExternal: true
+    return:
+      returnType:
+        name: Boolean
+        isExternal: true
+  name: ValidateUnitOfMeasure
+  uid: M:Codeunit::TM3_PriceAsset-FixedAsset.ValidateUnitOfMeasure(Price_Asset@):Boolean
+- syntax:
+    content: 'procedure IsLookupUnitOfMeasureOK(var PriceAsset: Record "Price Asset" temporary): Boolean'
+    parameters:
+    - id: PriceAsset
+      parameterType:
+        name: Record "Price Asset" temporary
+        isExternal: true
+    return:
+      returnType:
+        name: Boolean
+        isExternal: true
+  name: IsLookupUnitOfMeasureOK
+  uid: M:Codeunit::TM3_PriceAsset-FixedAsset.IsLookupUnitOfMeasureOK(Price_Asset@):Boolean
+- syntax:
+    content: 'procedure IsLookupVariantOK(var PriceAsset: Record "Price Asset" temporary): Boolean'
+    parameters:
+    - id: PriceAsset
+      parameterType:
+        name: Record "Price Asset" temporary
+        isExternal: true
+    return:
+      returnType:
+        name: Boolean
+        isExternal: true
+  name: IsLookupVariantOK
+  uid: M:Codeunit::TM3_PriceAsset-FixedAsset.IsLookupVariantOK(Price_Asset@):Boolean
+- syntax:
+    content: 'procedure IsAssetNoRequired(): Boolean'
+    return:
+      returnType:
+        name: Boolean
+        isExternal: true
+  name: IsAssetNoRequired
+  uid: M:Codeunit::TM3_PriceAsset-FixedAsset.IsAssetNoRequired:Boolean
+- syntax:
+    content: 'procedure FillBestLine(PriceCalculationBuffer: Record "Price Calculation Buffer" temporary, AmountType: Enum "Price Amount Type", var PriceListLine: Record "Price List Line")'
+    parameters:
+    - id: PriceCalculationBuffer
+      parameterType:
+        name: Record "Price Calculation Buffer" temporary
+        isExternal: true
+    - id: AmountType
+      parameterType:
+        name: Microsoft.Pricing.PriceList."Price Amount Type"
+        isExternal: true
+    - id: PriceListLine
+      parameterType:
+        name: Record "Price List Line"
+        isExternal: true
+  name: FillBestLine
+  uid: M:Codeunit::TM3_PriceAsset-FixedAsset.FillBestLine(Price_Calculation_Buffer,Enum::Microsoft#Pricing#PriceList#Price_Amount_Type,Price_List_Line@)
+- syntax:
+    content: 'procedure FilterPriceLines(PriceAsset: Record "Price Asset" temporary, var PriceListLine: Record "Price List Line"): Boolean'
+    parameters:
+    - id: PriceAsset
+      parameterType:
+        name: Record "Price Asset" temporary
+        isExternal: true
+    - id: PriceListLine
+      parameterType:
+        name: Record "Price List Line"
+        isExternal: true
+    return:
+      returnType:
+        name: Boolean
+        isExternal: true
+  name: FilterPriceLines
+  uid: M:Codeunit::TM3_PriceAsset-FixedAsset.FilterPriceLines(Price_Asset,Price_List_Line@):Boolean
+- syntax:
+    content: 'procedure PutRelatedAssetsToList(PriceAsset: Record "Price Asset" temporary, var PriceAssetList: Codeunit "Price Asset List")'
+    parameters:
+    - id: PriceAsset
+      parameterType:
+        name: Record "Price Asset" temporary
+        isExternal: true
+    - id: PriceAssetList
+      parameterType:
+        name: Microsoft.Pricing.Asset."Price Asset List"
+        isExternal: true
+  name: PutRelatedAssetsToList
+  uid: M:Codeunit::TM3_PriceAsset-FixedAsset.PutRelatedAssetsToList(Price_Asset,Codeunit::Microsoft#Pricing#Asset#Price_Asset_List@)
+- syntax:
+    content: 'procedure FillFromBuffer(var PriceAsset: Record "Price Asset" temporary, PriceCalculationBuffer: Record "Price Calculation Buffer" temporary)'
+    parameters:
+    - id: PriceAsset
+      parameterType:
+        name: Record "Price Asset" temporary
+        isExternal: true
+    - id: PriceCalculationBuffer
+      parameterType:
+        name: Record "Price Calculation Buffer" temporary
+        isExternal: true
+  name: FillFromBuffer
+  uid: M:Codeunit::TM3_PriceAsset-FixedAsset.FillFromBuffer(Price_Asset@,Price_Calculation_Buffer)
+implements:
+- name: Microsoft.Pricing.Asset."Price Asset"
+  isExternal: true
+commentId: O:Codeunit::TM3 PriceAsset-FixedAsset
+summary: Codeunit TM3 PriceAsset-FixedAsset (ID 50304) implements Interface Price Asset.
+remarks: a remark about this codeunit 50304
+name: '"TM3 PriceAsset-FixedAsset"'
+uid: O:Codeunit::TM3_PriceAsset-FixedAsset
