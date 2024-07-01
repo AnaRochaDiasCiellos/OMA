@@ -3,8 +3,6 @@
     "al.codeAnalyzers": [
         "${CodeCop}",
         "${UICop}",
-        // TODO Set a correct scope for the extension AppSourceCop or PerTenantExtensionCop
-        "${AppSourceCop}",
         "${PerTenantExtensionCop}"
     ],
     "al.enableCodeAnalysis": true,

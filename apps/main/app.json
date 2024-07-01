@@ -1,7 +1,6 @@
 {
-    // TODO Set a new Guid for this App. Use the Create GUID function. Put your AppID in the object Range Excel.
-  "id": "<Generated GUID>",
-  "name": "<Extension Name>",
+  "id": "8fde2410-ca75-4c9f-b7b6-3e87f544bbbd",
+  "name": "OMATrial",
   "publisher": "Ciellos",
   "version": "1.0.0.0",
   "brief": "<Brief description>",
@@ -12,18 +11,15 @@
   "contextSensitiveHelpUrl": "https://www.companyname.com",
   "url": "https://www.companyname.com",
   "logo": "./src/AppResource/ExtensionLogo.jpeg",
-   // TODO Set The right Application Version
    "application": "24.0.0.0",
   "dependencies": [],
   "screenshots": [],
-  // TODO Set the correct Platform version
   "platform": "24.0.0.0",
-  // TODO Set the correct Runtime Version
   "runtime": "13.0",
   "idRanges": [
     {
-      "from": "<Reserved ID Range>",
-      "to": "<Reserved ID Range>"
+      "from": 50000,
+      "to": 60000
     }
   ],
   "features": [ "TranslationFile", "NoImplicitWith", "NoPromotedActionProperties"],
