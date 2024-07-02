@@ -1,0 +1,74 @@
+### YamlMime:XRefMap
+sorted: true
+references:
+- uid: E:EnumExtension::TM3_FixedAssetType.TM3_FixedAsset
+  name: "\"TM3 FixedAsset\""
+  href: reference/omatrial/EnumExtension/TM3-FixedAssetType.html
+- uid: M:Codeunit::TM3_PriceAsset-FixedAsset.FillBestLine(Price_Calculation_Buffer,Enum::Microsoft#Pricing#PriceList#Price_Amount_Type,Price_List_Line@)
+  name: FillBestLine
+  href: reference/omatrial/Codeunit/TM3-PriceAsset-FixedAsset.html
+- uid: M:Codeunit::TM3_PriceAsset-FixedAsset.FillFromBuffer(Price_Asset@,Price_Calculation_Buffer)
+  name: FillFromBuffer
+  href: reference/omatrial/Codeunit/TM3-PriceAsset-FixedAsset.html
+- uid: M:Codeunit::TM3_PriceAsset-FixedAsset.FilterPriceLines(Price_Asset,Price_List_Line@):Boolean
+  name: FilterPriceLines
+  href: reference/omatrial/Codeunit/TM3-PriceAsset-FixedAsset.html
+- uid: M:Codeunit::TM3_PriceAsset-FixedAsset.GetId(Price_Asset@)
+  name: GetId
+  href: reference/omatrial/Codeunit/TM3-PriceAsset-FixedAsset.html
+- uid: M:Codeunit::TM3_PriceAsset-FixedAsset.GetNo(Price_Asset@)
+  name: GetNo
+  href: reference/omatrial/Codeunit/TM3-PriceAsset-FixedAsset.html
+- uid: M:Codeunit::TM3_PriceAsset-FixedAsset.IsAssetNoRequired:Boolean
+  name: IsAssetNoRequired
+  href: reference/omatrial/Codeunit/TM3-PriceAsset-FixedAsset.html
+- uid: M:Codeunit::TM3_PriceAsset-FixedAsset.IsLookupOK(Price_Asset@):Boolean
+  name: IsLookupOK
+  href: reference/omatrial/Codeunit/TM3-PriceAsset-FixedAsset.html
+- uid: M:Codeunit::TM3_PriceAsset-FixedAsset.IsLookupUnitOfMeasureOK(Price_Asset@):Boolean
+  name: IsLookupUnitOfMeasureOK
+  href: reference/omatrial/Codeunit/TM3-PriceAsset-FixedAsset.html
+- uid: M:Codeunit::TM3_PriceAsset-FixedAsset.IsLookupVariantOK(Price_Asset@):Boolean
+  name: IsLookupVariantOK
+  href: reference/omatrial/Codeunit/TM3-PriceAsset-FixedAsset.html
+- uid: M:Codeunit::TM3_PriceAsset-FixedAsset.PutRelatedAssetsToList(Price_Asset,Codeunit::Microsoft#Pricing#Asset#Price_Asset_List@)
+  name: PutRelatedAssetsToList
+  href: reference/omatrial/Codeunit/TM3-PriceAsset-FixedAsset.html
+- uid: M:Codeunit::TM3_PriceAsset-FixedAsset.ValidateUnitOfMeasure(Price_Asset@):Boolean
+  name: ValidateUnitOfMeasure
+  href: reference/omatrial/Codeunit/TM3-PriceAsset-FixedAsset.html
+- uid: N:Module::OMATrial
+  name: OMATrial
+  summary: ''
+  fqName: OMATrial by Ciellos (1.0.0.0)
+  href: reference/omatrial/Module/OMATrial.html
+- uid: O:Codeunit::PREFIX_Event_Subscribers
+  name: "\"PREFIX Event Subscribers\""
+  fqName: "\"PREFIX Event Subscribers\""
+  href: reference/omatrial/Codeunit/PREFIX-Event-Subscribers.html
+- uid: O:Codeunit::PREFIX_Some_Test_Codeunit
+  name: "\"PREFIX Some Test Codeunit\""
+  fqName: "\"PREFIX Some Test Codeunit\""
+  href: reference/omatrial/Codeunit/PREFIX-Some-Test-Codeunit.html
+- uid: O:Codeunit::PREFIX_Some_Test_Library
+  name: "\"PREFIX Some Test Library\""
+  fqName: "\"PREFIX Some Test Library\""
+  href: reference/omatrial/Codeunit/PREFIX-Some-Test-Library.html
+- uid: O:Codeunit::TM3_FixedAssetPriceCalc#
+  name: "\"TM3 FixedAssetPriceCalc.\""
+  summary: >
+    <p sourcefile="reference/omatrial/Codeunit/TM3-FixedAssetPriceCalc..yml" sourcestartlinenumber="1" jsonPath="/summary">oh look a summary about codeunit 50305</p>
+  fqName: "\"TM3 FixedAssetPriceCalc.\""
+  href: reference/omatrial/Codeunit/TM3-FixedAssetPriceCalc..html
+- uid: O:Codeunit::TM3_PriceAsset-FixedAsset
+  name: "\"TM3 PriceAsset-FixedAsset\""
+  summary: >
+    <p sourcefile="reference/omatrial/Codeunit/TM3-PriceAsset-FixedAsset.yml" sourcestartlinenumber="1" jsonPath="/summary">Codeunit TM3 PriceAsset-FixedAsset (ID 50304) implements Interface Price Asset.</p>
+  fqName: "\"TM3 PriceAsset-FixedAsset\""
+  href: reference/omatrial/Codeunit/TM3-PriceAsset-FixedAsset.html
+- uid: O:EnumExtension::TM3_FixedAssetType
+  name: "\"TM3 FixedAssetType\""
+  summary: >
+    <p sourcefile="reference/omatrial/EnumExtension/TM3-FixedAssetType.yml" sourcestartlinenumber="1" jsonPath="/summary">EnumExtension TM3 FixedAssetType (ID 50300) extends Record Price Asset Type.</p>
+  fqName: "\"TM3 FixedAssetType\""
+  href: reference/omatrial/EnumExtension/TM3-FixedAssetType.html

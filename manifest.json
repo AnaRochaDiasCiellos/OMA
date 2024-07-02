@@ -1,0 +1,116 @@
+{
+  "homepages": [],
+  "source_base_path": "H:/ALBC/OMA",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Conceptual",
+      "source_relative_path": "README.md",
+      "output": {
+        ".html": {
+          "relative_path": "README.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "BusinessCentralApplicationObject",
+      "source_relative_path": "reference/omatrial/Codeunit/PREFIX-Event-Subscribers.yml",
+      "output": {
+        ".html": {
+          "relative_path": "reference/omatrial/Codeunit/PREFIX-Event-Subscribers.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "BusinessCentralApplicationObject",
+      "source_relative_path": "reference/omatrial/Codeunit/PREFIX-Some-Test-Codeunit.yml",
+      "output": {
+        ".html": {
+          "relative_path": "reference/omatrial/Codeunit/PREFIX-Some-Test-Codeunit.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "BusinessCentralApplicationObject",
+      "source_relative_path": "reference/omatrial/Codeunit/PREFIX-Some-Test-Library.yml",
+      "output": {
+        ".html": {
+          "relative_path": "reference/omatrial/Codeunit/PREFIX-Some-Test-Library.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "BusinessCentralApplicationObject",
+      "source_relative_path": "reference/omatrial/Codeunit/TM3-FixedAssetPriceCalc..yml",
+      "output": {
+        ".html": {
+          "relative_path": "reference/omatrial/Codeunit/TM3-FixedAssetPriceCalc..html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "BusinessCentralApplicationObject",
+      "source_relative_path": "reference/omatrial/Codeunit/TM3-PriceAsset-FixedAsset.yml",
+      "output": {
+        ".html": {
+          "relative_path": "reference/omatrial/Codeunit/TM3-PriceAsset-FixedAsset.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "BusinessCentralApplicationObject",
+      "source_relative_path": "reference/omatrial/EnumExtension/TM3-FixedAssetType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "reference/omatrial/EnumExtension/TM3-FixedAssetType.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "BusinessCentralApplicationObject",
+      "source_relative_path": "reference/omatrial/Module/OMATrial.yml",
+      "output": {
+        ".html": {
+          "relative_path": "reference/omatrial/Module/OMATrial.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html"
+        },
+        ".json": {
+          "relative_path": "toc.json"
+        }
+      },
+      "version": ""
+    }
+  ],
+  "version_info": {},
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}
